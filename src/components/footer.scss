@@ -1,0 +1,52 @@
+.footer {
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.footer-container {
+  display: flex;
+  padding: 39px 13px 24px 19px;
+}
+.footer-contacts {
+  flex-basis: 20%;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin-bottom: 18px;
+}
+.address,
+.phone {
+  font-size: 14px;
+  line-height: 16px;
+  color: #4F4F4F;
+}
+.address {
+  margin-bottom: 11px;
+}
+.phone {
+  margin-bottom: 16px;
+}
+.footer-info {
+  flex-basis: 60%;
+}
+.footer-text {
+  margin-top: 32px;
+  margin-left: 45px;
+  line-height: 126.3%;
+  color: #4F4F4F;
+}
+
+.privacy {
+  text-align: center;
+  font-size: 14px;
+  line-height: 126.3%;
+  color: #2F80ED;
+}
+.privacy-date {
+  color: #828282;;
+}

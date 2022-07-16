@@ -1,0 +1,71 @@
+style
+  include ./main.scss
+
+main.main
+  div.main
+    section.filter
+      p.filter-title 26 Results Found
+        div.line
+      form
+        div.form-control
+          select.filter-select
+            option Param 1
+              option value 1
+              option value 2
+              option value 3
+              option value 4
+              option value 5
+        div.form-control
+          select.filter-select
+            option Param 2
+              option value 2_1
+              option value 2_2
+              option value 2_3
+        div.form-control
+          select.filter-select
+            <option>Param 3</option>
+              option min
+              option max
+        div.form-control
+          select.filter-select
+            option Param 4
+              option Keyword
+        button.form-btn SEARCH
+    section.cards
+      h2 Used DAF trucks from Netherlands for sale at SuperTrucks NL
+      div.sort-container
+        div.pagination
+          button.pag-btn <
+          button.pag-btn 1
+          button.pag-btn 2
+          button.pag-btn >
+        div.sort
+          div.sort-description Sort by
+          select.select-options
+            option Sort options
+        div.cards-list
+          div.card-item
+            div.img-container
+              img.img-card
+              div.card-about
+                each val in stock
+                  h2.card-title= val.title
+                  p.card-description= val.type
+                  span.year= val.year
+                  span.mileage= val.mileage + val.mileage_measure
+                  span.configuration= val.axle_configuration
+                  div.price= '$' + val.price
+      div.sort-container
+        div.pagination
+          button.pag-btn <
+          button.pag-btn 1
+          button.pag-btn 2
+          button.pag-btn >
+        div.sort
+          div.sort-description Sort by
+          select.select-options
+            option Sort options
+        div.content-container
+          each val in page_text
+            p.content= val.content
+

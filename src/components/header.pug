@@ -1,0 +1,21 @@
+style
+  include header.scss
+
+header.header
+  div.header-container
+    h1 DAF - TRUCKS FOR SALE FROM NETHERLANDS / LOGO
+
+    //- each val in page_meta
+    //-   h1= val.h1
+
+nav.nav
+  ul.nav-list
+    each val in nav
+      li.nav-item
+        a.nav-link(href=val.href)= val.text
+
+div.nav-breadcrumbs
+  ul.nav-breadcrumbs-list
+    each val in breadcrumbs
+      li.nav-breadcrumbs-item
+        a.nav-breadcrumbs-link(href=val.href)= val.text
