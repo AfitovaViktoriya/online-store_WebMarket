@@ -31,6 +31,10 @@
 form {
   padding: 16px;
 }
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
 .form-btn {
   width: 238px;
   height: 34.47px;
@@ -101,8 +105,6 @@ h2 {
   width: 224px;
   height: 168px;
   margin-right: 16px;
-
-  background-color: #C4C4C4;
 }
 .img-card {
   width: 100%;
@@ -119,7 +121,7 @@ h2 {
 }
 .card-description {
   margin-top: 0;
-  margin-bottom: 54px;
+  margin-bottom: 100px;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;

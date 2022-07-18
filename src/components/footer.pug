@@ -1,15 +1,19 @@
 style
   include ./footer.scss
 
-div.footer
-  div.footer-container
-    div.footer-contacts
+.footer
+  .footer-container
+    .footer-contacts
       h2.footer-title Logo / Company Name
-      div.addressCompany Adress: Lorem ipsum dolor sit amet 18600, Netherlands
-      div.phone +38 958 755-00-00
-      div.social
-    div.footer-info
-      p.footer-text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis. Quis quo molestias repellat.
+      .address #[img.marker-icon(src="../assets/images/svg/marker.svg")] Company Adress: Lorem ipsum<br /> dolor sit amet<br /> 18600, Netherlands
+      .phone #[img.phone-icon(src="../assets/images/svg/phone.svg")] +38 958 755-00-00
+      .social
+        img(src="../assets/images/svg/facebook.svg")(style="margin-right: 10px;")
+        img.social-item(src="../assets/images/svg/instagram.svg")(style="margin-right: 10px;")
+        img.social-item(src="../assets/images/svg/twitter.svg")(style="margin-right: 10px;")
+        img.social-item(src="../assets/images/svg/youtube.svg")
+    .footer-info
+      p.footer-text(style="margin-left: 34px") Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis. Quis quo molestias repellat.
 
-p.privacy Privacy Policy - Terms and Conditions
-  span.privacy-date © 2019 -
+p.privacy #[span.privacy-date © 2019 -] Privacy Policy - Terms and Conditions
+

@@ -1,21 +1,16 @@
 style
-  include header.scss
+  include ./header.scss
 
-header.header
-  div.header-container
-    h1 DAF - TRUCKS FOR SALE FROM NETHERLANDS / LOGO
-
-    //- each val in page_meta
-    //-   h1= val.h1
-
+header
+  .header-container(style="padding: 27px 0 0 16px;")
+    h1(style="font-weight: 700; font-size: 18px; line-height: 21px; color: #000000;")= page_meta.h1 + ' / LOGO'
 nav.nav
-  ul.nav-list
+  ul.nav-list(style="padding: 18px 0 16px 16px; display: flex;")
     each val in nav
-      li.nav-item
-        a.nav-link(href=val.href)= val.text
-
-div.nav-breadcrumbs
-  ul.nav-breadcrumbs-list
+      li.nav-item(style="margin-right: 32px;")
+        a.nav-link(style="line-height: 19px; color: #8D8D8D;")(href=val.href)= val.text
+.nav-breadcrumbs
+  ul.nav-breadcrumbs-list(style="margin-top: 9px; margin-bottom: 11px; padding-left: 16px; display: flex;")
     each val in breadcrumbs
-      li.nav-breadcrumbs-item
-        a.nav-breadcrumbs-link(href=val.href)= val.text
+      li.nav-breadcrumbs-item(style="margin-right: 32px;")
+        a.nav-breadcrumbs-link(style="font-size: 12px; line-height: 14px; color: #4F4F4F;")(href=val.href)= val.text

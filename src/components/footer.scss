@@ -10,6 +10,7 @@
   padding: 39px 13px 24px 19px;
 }
 .footer-contacts {
+  width: 235px;
   flex-basis: 20%;
 }
 .footer-title {
@@ -19,24 +20,34 @@
   color: #333333;
   margin-bottom: 18px;
 }
+.phone-icon,
+.marker-icon {
+  margin-right: 7px;
+}
 .address,
 .phone {
+  display: flex;
+  align-items: flex-start;
   font-size: 14px;
   line-height: 16px;
   color: #4F4F4F;
 }
 .address {
+  width: 234px;
   margin-bottom: 11px;
 }
 .phone {
   margin-bottom: 16px;
 }
+// .social-item {
+//   margin-right: 5px;
+// }
 .footer-info {
   flex-basis: 60%;
 }
 .footer-text {
   margin-top: 32px;
-  margin-left: 45px;
+  margin-left: 35px;
   line-height: 126.3%;
   color: #4F4F4F;
 }
