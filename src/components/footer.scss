@@ -1,5 +1,8 @@
 .footer {
-  @include mainWidth;
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
   background-color: #FFFFFF;
 }
 .footer-container {

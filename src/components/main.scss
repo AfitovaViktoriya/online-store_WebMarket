@@ -1,5 +1,7 @@
 .main {
-  @include mainWidth;
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 320px;
   display: flex;
   justify-content: space-arond;
 }
