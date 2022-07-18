@@ -1,32 +1,23 @@
 header {
-  margin: 0 auto;
+  @include mainWidth;
   margin-top: 40px;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
   height: 100px;
   background-color: #FFFFFF;
 }
 .nav {
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
+  @include mainWidth;
   height: 55px;
   background-color: #FFFFFF;
 
-  .nav-link:hover {
+  &:hover {
     color: #2F80ED;
   }
 }
 
 .nav-breadcrumbs {
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
+  @include mainWidth;
 
-  .nav-breadcrumbs-link:hover {
+  &:hover {
     color: #2F80ED;
   }
 }
