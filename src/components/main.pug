@@ -8,7 +8,7 @@ main.main
         .line
       form
         .form-control
-          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+          select.filter-select
             option.param Param 1
               input(type='checkbox' name='value 1')
               span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 1
@@ -21,7 +21,7 @@ main.main
               input(type='checkbox' name='value 5')
               span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 5
         .form-control
-          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+          select.filter-select
             option.param Param 2
               input(type='radio' name='value 2_1')
               span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_1
@@ -30,12 +30,12 @@ main.main
               input(type='radio' name='value 2_3' checked)
               span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_3
         .form-control
-          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+          select.filter-select
             option.param Param 3
               input.length(style="width: 112px; height: 35px;")(placeholder="min")
               input.length(style="width: 112px; height: 35px; margin-left: auto; margin-top: -35px")(placeholder="max")
         .form-control
-          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+          select.filter-select
             option.param Param 4
               input(style="width: 238px; height: 36px;")(placeholder="option Keyword")
         button.form-btn SEARCH
@@ -43,10 +43,10 @@ main.main
       h2= page_meta.title
       .sort-container
         .pagination
-          button.pag-btn <
+          button.pag-btn &lt;
           button.pag-btn 1
           button.pag-btn 2
-          button.pag-btn >
+          button.pag-btn &gt;
         .sort
           .sort-description Sort by
           select.select-options
@@ -55,7 +55,7 @@ main.main
         each val in stock
           .card-item
             .img-container
-              img.img-card(src=val.image)
+              img.img-card(src=`./assets/images/img/${val.image}`)
             .card-about
               h2.card-title= val.title
               p.card-description= val.type
@@ -65,10 +65,10 @@ main.main
             .price= '$' + val.price
       .sort-container
         .pagination
-          button.pag-btn <
+          button.pag-btn &lt;
           button.pag-btn 1
           button.pag-btn 2
-          button.pag-btn >
+          button.pag-btn &gt;
         .sort
           .sort-description Sort by
           select.select-options
