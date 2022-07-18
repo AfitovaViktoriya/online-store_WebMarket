@@ -1,0 +1,49 @@
+.card-item {
+  display: flex;
+  background-color: #FFFFFF;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.img-container {
+  width: 224px;
+  height: 168px;
+  margin-right: 16px;
+}
+.img-card {
+  width: 100%;
+}
+.card-about {
+  flex-basis: 50%;
+}
+.card-title {
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.card-description {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.year,
+.mileage,
+.configuration {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: #C4C4C4;
+  color: #FFFFFF;
+  padding: 5px;
+  margin-right: 16px;
+}
+.price {
+  margin-left: auto;
+  font-weight: 500;
+  line-height: 19px;
+  color: #4F4F4F;
+}

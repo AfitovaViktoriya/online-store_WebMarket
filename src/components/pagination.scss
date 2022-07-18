@@ -1,0 +1,39 @@
+.sort-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.pag-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  margin-right: 16px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+
+  line-height: 19px;
+  color: #000000;
+}
+.pag-btn:hover {
+  background-color: #56CCF2;
+}
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort-description {
+  line-height: 19px;
+  color: #000000;
+  margin-right: 10px;
+}
+.select-options {
+  width: 207px;
+  height: 35px;
+  padding: 6px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+
+  line-height: 19px;
+  color: #828282;
+}

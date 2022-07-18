@@ -1,0 +1,14 @@
+style
+  include ./cards.scss
+
+each val in stock
+  .card-item
+    .img-container
+      img.img-card(src=`./assets/images/img/${val.image}`)
+    .card-about
+      h2.card-title= val.title
+      p.card-description= val.type
+      span.year= val.year
+      span.mileage= val.mileage + val.mileage_measure
+      span.configuration= val.axle_configuration
+    .price= '$' + val.price

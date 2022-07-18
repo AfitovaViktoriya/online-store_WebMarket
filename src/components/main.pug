@@ -3,76 +3,13 @@ style
 
 main.main
   .main
-    section.filter
-      p.filter-title 26 Results Found
-        .line
-      form
-        .form-control
-          select.filter-select
-            option.param Param 1
-              input(type='checkbox' name='value 1')
-              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 1
-              input(type='checkbox' name='value 2')
-              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 2
-              input(type='checkbox' name='value 3' checked)
-              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 3
-              input(type='checkbox' name='value 4' checked)
-              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 4
-              input(type='checkbox' name='value 5')
-              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 5
-        .form-control
-          select.filter-select
-            option.param Param 2
-              input(type='radio' name='value 2_1')
-              span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_1
-              input(type='radio' name='value 2_2')
-              span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_2
-              input(type='radio' name='value 2_3' checked)
-              span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_3
-        .form-control
-          select.filter-select
-            option.param Param 3
-              input.length(style="width: 112px; height: 35px;")(placeholder="min")
-              input.length(style="width: 112px; height: 35px; margin-left: auto; margin-top: -35px")(placeholder="max")
-        .form-control
-          select.filter-select
-            option.param Param 4
-              input(style="width: 238px; height: 36px;")(placeholder="option Keyword")
-        button.form-btn SEARCH
+    include ./filter
     section.cards
       h2= page_meta.title
-      .sort-container
-        .pagination
-          button.pag-btn &lt;
-          button.pag-btn 1
-          button.pag-btn 2
-          button.pag-btn &gt;
-        .sort
-          .sort-description Sort by
-          select.select-options
-            option Sort options
+      include ./pagination
       .cards-list
-        each val in stock
-          .card-item
-            .img-container
-              img.img-card(src=`./assets/images/img/${val.image}`)
-            .card-about
-              h2.card-title= val.title
-              p.card-description= val.type
-              span.year= val.year
-              span.mileage= val.mileage + val.mileage_measure
-              span.configuration= val.axle_configuration
-            .price= '$' + val.price
-      .sort-container
-        .pagination
-          button.pag-btn &lt;
-          button.pag-btn 1
-          button.pag-btn 2
-          button.pag-btn &gt;
-        .sort
-          .sort-description Sort by
-          select.select-options
-            option Sort options
+        include ./cards
+      include ./pagination
       .content-container
         each val in page_text
           p.content= val.content
