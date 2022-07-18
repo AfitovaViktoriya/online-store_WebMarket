@@ -27,6 +27,7 @@
   border: none;
   width: 238.29px;
   height: 19px;
+  margin-bottom: 11px;
 }
 form {
   padding: 16px;
@@ -34,7 +35,9 @@ form {
 .form-control {
   display: flex;
   flex-direction: column;
+  margin-bottom: 17px;
 }
+
 .form-btn {
   width: 238px;
   height: 34.47px;

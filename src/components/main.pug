@@ -8,28 +8,36 @@ main.main
         .line
       form
         .form-control
-          select.filter-select
-            option Param 1
-              p value 1 <input type='checkbox' value='1' />
-              label value 2 <input type='checkbox' />
-              label value 3 <input type='checkbox' />
-              label value 4 <input type='checkbox' />
-              label value 5 <input type='checkbox' />
+          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+            option.param Param 1
+              input(type='checkbox' name='value 1')
+              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 1
+              input(type='checkbox' name='value 2')
+              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 2
+              input(type='checkbox' name='value 3' checked)
+              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 3
+              input(type='checkbox' name='value 4' checked)
+              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 4
+              input(type='checkbox' name='value 5')
+              span.param-value1(style="margin-top: -20px; line-height: 19px; color: #4F4F4F;") value 5
         .form-control
-          select.filter-select
-            option Param 2
-              option value 2_1
-              option value 2_2
-              option value 2_3
+          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+            option.param Param 2
+              input(type='radio' name='value 2_1')
+              span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_1
+              input(type='radio' name='value 2_2')
+              span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_2
+              input(type='radio' name='value 2_3' checked)
+              span(style="margin-top: -15px; line-height: 19px; color: #4F4F4F;") value 2_3
         .form-control
-          select.filter-select
-            <option>Param 3
-              option min
-              option max
+          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+            option.param Param 3
+              input.length(style="width: 112px; height: 35px;")(placeholder="min")
+              input.length(style="width: 112px; height: 35px; margin-left: auto; margin-top: -35px")(placeholder="max")
         .form-control
-          select.filter-select
-            option Param 4
-              option Keyword
+          select.filter-select(style="font-size: 16px; line-height: 19px; color: #333333;")
+            option.param Param 4
+              input(style="width: 238px; height: 36px;")(placeholder="option Keyword")
         button.form-btn SEARCH
     section.cards
       h2= page_meta.title
