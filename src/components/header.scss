@@ -1,32 +1,47 @@
+@mixin mainWidth($margin: 0 auto, $max-width: 1140px, $min-width: 320px, $width: 100%) {
+  margin: $margin;
+  max-width: $max-width;
+  min-width: $min-width;
+  width: $width;
+}
+
+$hover-color: #2F80ED;
+
 header {
-  margin: 0 auto;
+  @include mainWidth;
   margin-top: 40px;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
   height: 100px;
   background-color: #FFFFFF;
+  &-container {
+    padding: 27px 0 0 16px;
+  }
 }
 .nav {
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
+  @include mainWidth;
   height: 55px;
   background-color: #FFFFFF;
 
-  .nav-link:hover {
-    color: #2F80ED;
-  }
+    .nav-list {
+      padding: 18px 0 16px 16px;
+      display: flex;
+    }
+
+    .nav-item {margin-right: 32px;}
+
+    .nav-link {
+      line-height: 19px;
+      color: #8D8D8D;
+
+      .nav-link:hover {
+          color: $hover-color;
+        }
+      }
 }
 
 .nav-breadcrumbs {
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
+  @include mainWidth;
 
   .nav-breadcrumbs-link:hover {
-    color: #2F80ED;
+    color: $hover-color;
   }
 }

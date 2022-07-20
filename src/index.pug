@@ -1,12 +1,14 @@
+- var pageTitle = 'Online-store'
+
 doctype html
 html(lang="en")
  head
   style
-    include styles.scss
+    include styles.css
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Online-store
+  title= pageTitle
 body
   include ./components/header
   include ./components/main
