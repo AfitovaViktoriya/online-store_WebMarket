@@ -5,12 +5,12 @@ header
   .header-container
     h1= page_meta.h1 + ' / LOGO'
 nav.nav
-  ul.nav-list(style="padding: 18px 0 16px 16px; display: flex;")
+  ul.nav-list
     each val in nav
-      li.nav-item(style="margin-right: 32px;")
-        a.nav-link(style="line-height: 19px; color: #8D8D8D;")(href=val.href)= val.text
+      li.nav-item
+        a.nav-link(href=val.href)= val.text
 .nav-breadcrumbs
-  ul.nav-breadcrumbs-list(style="margin-top: 9px; margin-bottom: 11px; padding-left: 16px; display: flex;")
+  ul.nav-breadcrumbs-list
     each val in breadcrumbs
-      li.nav-breadcrumbs-item(style="margin-right: 32px;")
-        a.nav-breadcrumbs-link(style="font-size: 12px; line-height: 14px; color: #4F4F4F;")(href=val.href)= val.text
+      li.nav-breadcrumbs-item
+        a.nav-breadcrumbs-link(href=val.href)= val.text

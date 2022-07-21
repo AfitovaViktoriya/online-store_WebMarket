@@ -12,7 +12,7 @@ header {
   margin-top: 40px;
   height: 100px;
   background-color: #FFFFFF;
-  &-container {
+  .header-container {
     padding: 27px 0 0 16px;
     h1 {
       font-weight: 700;
@@ -48,7 +48,24 @@ header {
 .nav-breadcrumbs {
   @include mainWidth;
 
-  .nav-breadcrumbs-link:hover {
-    color: $hover-color;
-  }
+    .nav-breadcrumbs-list {
+      margin-top: 9px;
+      margin-bottom: 11px;
+      padding-left: 16px;
+      display: flex;
+    }
+
+    .nav-breadcrumbs-item {
+      margin-right: 32px;
+    }
+
+    .nav-breadcrumbs-link {
+      font-size: 12px;
+      line-height: 14px;
+      color: #4F4F4F;
+
+        .nav-breadcrumbs-link:hover {
+          color: $hover-color;
+        }
+    }
 }

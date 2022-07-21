@@ -8,11 +8,11 @@ header {
   background-color: #FFFFFF;
 }
 
-header-container {
+header .header-container {
   padding: 27px 0 0 16px;
 }
 
-header-container h1 {
+header .header-container h1 {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -55,7 +55,26 @@ header-container h1 {
   width: 100%;
 }
 
-.nav-breadcrumbs .nav-breadcrumbs-link:hover {
+.nav-breadcrumbs .nav-breadcrumbs-list {
+  margin-top: 9px;
+  margin-bottom: 11px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-breadcrumbs .nav-breadcrumbs-item {
+  margin-right: 32px;
+}
+
+.nav-breadcrumbs .nav-breadcrumbs-link {
+  font-size: 12px;
+  line-height: 14px;
+  color: #4F4F4F;
+}
+
+.nav-breadcrumbs .nav-breadcrumbs-link .nav-breadcrumbs-link:hover {
   color: #2F80ED;
 }
 /*# sourceMappingURL=header.css.map */
