@@ -1,22 +1,28 @@
+@mixin mainWidth($margin: 0 auto, $max-width: 1140px, $min-width: 320px, $width: 100%) {
+  margin: $margin;
+  max-width: $max-width;
+  min-width: $min-width;
+  width: $width;
+}
+
 .main {
-  margin: 0 auto;
-  max-width: 1140px;
-  min-width: 320px;
-  width: 100%;
+  @include mainWidth;
   display: flex;
   justify-content: space-arond;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+  }
+  .cards {
+    width: 850px;
+  }
 }
-.cards {
-  width: 850px;
-}
-h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
-}
+
+
 .content-container {
   width: 565px;
   margin: 24px 0 23px;

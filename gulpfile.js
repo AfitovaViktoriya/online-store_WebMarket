@@ -52,7 +52,8 @@ function clear() {
 
 function startWatch() {
   watch('src/**/*.pug', html)
-  watch('src/assets/styles/**/*.scss', css)
+  // watch('src/assets/styles/**/*.scss', css)
+  watch('src/**/*.scss', css)
   watch('src/assets/images/**/*', images)
 }
 

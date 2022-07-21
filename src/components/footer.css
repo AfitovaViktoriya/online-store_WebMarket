@@ -1,22 +1,24 @@
-@mixin mainWidth($margin: 0 auto, $max-width: 1140px, $min-width: 320px, $width: 100%) {
-  margin: $margin;
-  max-width: $max-width;
-  min-width: $min-width;
-  width: $width;
-}
-
 .footer {
-  @include mainWidth;
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 320px;
+  width: 100%;
   background-color: #FFFFFF;
 }
+
 .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 39px 13px 24px 19px;
 }
+
 .footer-contacts {
   width: 235px;
-  flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
+
 .footer-title {
   font-weight: 700;
   font-size: 18px;
@@ -24,28 +26,39 @@
   color: #333333;
   margin-bottom: 18px;
 }
+
 .phone-icon,
 .marker-icon {
   margin-right: 7px;
 }
+
 .address,
 .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 14px;
   line-height: 16px;
   color: #4F4F4F;
 }
+
 .address {
   width: 234px;
   margin-bottom: 11px;
 }
+
 .phone {
   margin-bottom: 16px;
 }
+
 .footer-info {
-  flex-basis: 60%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
+
 .footer-text {
   margin-top: 32px;
   margin-left: 35px;
@@ -59,6 +72,8 @@
   line-height: 126.3%;
   color: #2F80ED;
 }
+
 .privacy-date {
-  color: #828282;;
+  color: #828282;
 }
+/*# sourceMappingURL=footer.css.map */

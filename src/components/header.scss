@@ -14,8 +14,15 @@ header {
   background-color: #FFFFFF;
   &-container {
     padding: 27px 0 0 16px;
+    h1 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+    }
   }
 }
+
 .nav {
   @include mainWidth;
   height: 55px;
