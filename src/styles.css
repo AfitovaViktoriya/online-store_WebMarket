@@ -19,21 +19,4 @@ body {
   font-size: 16px;
   background-color: #D9D9D9;
 }
-
-header {
-  margin-top: 40px;
-  height: 100px;
-  background-color: #FFFFFF;
-}
-
-header-container {
-  padding: 27px 0 0 16px;
-}
-
-header-container h1 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-}
 /*# sourceMappingURL=styles.css.map */

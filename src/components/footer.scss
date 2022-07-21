@@ -5,60 +5,70 @@
   width: $width;
 }
 
+$title-color: #333333;
+$text-color: #4F4F4F;
+$privicy-date-color: #828282;
+$privicy-color: #2F80ED;
+
 .footer {
   @include mainWidth;
   background-color: #FFFFFF;
-}
-.footer-container {
-  display: flex;
-  padding: 39px 13px 24px 19px;
-}
-.footer-contacts {
-  width: 235px;
-  flex-basis: 20%;
-}
-.footer-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  margin-bottom: 18px;
-}
-.phone-icon,
-.marker-icon {
-  margin-right: 7px;
-}
-.address,
-.phone {
-  display: flex;
-  align-items: flex-start;
-  font-size: 14px;
-  line-height: 16px;
-  color: #4F4F4F;
-}
-.address {
-  width: 234px;
-  margin-bottom: 11px;
-}
-.phone {
-  margin-bottom: 16px;
-}
-.footer-info {
-  flex-basis: 60%;
-}
-.footer-text {
-  margin-top: 32px;
-  margin-left: 35px;
-  line-height: 126.3%;
-  color: #4F4F4F;
+  &-container {
+    display: flex;
+    padding: 39px 13px 24px 19px;
+    .footer-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: $title-color;
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    .footer-contacts {
+      width: 235px;
+      flex-basis: 20%;
+      .phone-icon,
+      .marker-icon {
+        margin-right: 7px;
+      }
+      .address,
+      .phone {
+        display: flex;
+        align-items: flex-start;
+        font-size: 14px;
+        line-height: 16px;
+        color: $text-color;
+      }
+      .address {
+        width: 234px;
+        margin-bottom: 11px;
+      }
+      .phone {
+        margin-bottom: 16px;
+      }
+      .social-item {
+        margin-right: 10px;
+      }
+    }
+  }
+    .footer-info {
+      flex-basis: 60%;
+      &-text {
+        margin-top: 37px;
+        margin-left: 35px;
+        line-height: 126.3%;
+        color: $text-color;
+      }
+    }
 }
 
 .privacy {
   text-align: center;
   font-size: 14px;
   line-height: 126.3%;
-  color: #2F80ED;
-}
-.privacy-date {
-  color: #828282;;
+  color: $privicy-color;
+  &-date {
+    color: $privicy-date-color;
+  }
 }

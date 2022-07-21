@@ -8,11 +8,11 @@ header {
   background-color: #FFFFFF;
 }
 
-header .header-container {
+header-container {
   padding: 27px 0 0 16px;
 }
 
-header .header-container h1 {
+header-container-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -44,7 +44,7 @@ header .header-container h1 {
   color: #8D8D8D;
 }
 
-.nav .nav-link .nav-link:hover {
+.nav .nav-link:hover {
   color: #2F80ED;
 }
 
@@ -74,7 +74,7 @@ header .header-container h1 {
   color: #4F4F4F;
 }
 
-.nav-breadcrumbs .nav-breadcrumbs-link .nav-breadcrumbs-link:hover {
+.nav-breadcrumbs .nav-breadcrumbs-link:hover {
   color: #2F80ED;
 }
 /*# sourceMappingURL=header.css.map */

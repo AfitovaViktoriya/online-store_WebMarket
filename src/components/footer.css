@@ -13,27 +13,28 @@
   padding: 39px 13px 24px 19px;
 }
 
-.footer-contacts {
+.footer-container .footer-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.footer-container .footer-contacts {
   width: 235px;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
 
-.footer-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  margin-bottom: 18px;
-}
-
-.phone-icon,
-.marker-icon {
+.footer-container .footer-contacts .phone-icon,
+.footer-container .footer-contacts .marker-icon {
   margin-right: 7px;
 }
 
-.address,
-.phone {
+.footer-container .footer-contacts .address,
+.footer-container .footer-contacts .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,22 +46,26 @@
   color: #4F4F4F;
 }
 
-.address {
+.footer-container .footer-contacts .address {
   width: 234px;
   margin-bottom: 11px;
 }
 
-.phone {
+.footer-container .footer-contacts .phone {
   margin-bottom: 16px;
 }
 
-.footer-info {
+.footer-container .footer-contacts .social-item {
+  margin-right: 10px;
+}
+
+.footer .footer-info {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
 
-.footer-text {
-  margin-top: 32px;
+.footer .footer-info-text {
+  margin-top: 37px;
   margin-left: 35px;
   line-height: 126.3%;
   color: #4F4F4F;

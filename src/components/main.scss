@@ -5,6 +5,9 @@
   width: $width;
 }
 
+$text-color: #4F4F4F;
+$title-color: #333333;
+
 .main {
   @include mainWidth;
   display: flex;
@@ -15,7 +18,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #333333;
+    color: $title-color;
   }
   .cards {
     width: 850px;
@@ -26,8 +29,8 @@
 .content-container {
   width: 565px;
   margin: 24px 0 23px;
-}
-.content {
-  line-height: 126.3%;
-  color: #4F4F4F;
+    .content {
+      line-height: 126.3%;
+      color: $text-color;
+    }
 }

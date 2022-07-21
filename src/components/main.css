@@ -3,7 +3,6 @@
   max-width: 1140px;
   min-width: 320px;
   width: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +29,7 @@
   margin: 24px 0 23px;
 }
 
-.content {
+.content-container .content {
   line-height: 126.3%;
   color: #4F4F4F;
 }

@@ -5,20 +5,24 @@
   width: $width;
 }
 
+$bg-color: #FFFFFF;
+$dark-color: #000000;
+$M-Grey-color: #4F4F4F;
+$S-Grey-color: #8D8D8D;
 $hover-color: #2F80ED;
 
 header {
   @include mainWidth;
   margin-top: 40px;
   height: 100px;
-  background-color: #FFFFFF;
-  .header-container {
+  background-color: $bg-color;
+  &-container {
     padding: 27px 0 0 16px;
-    h1 {
+    &-title {
       font-weight: 700;
       font-size: 18px;
       line-height: 21px;
-      color: #000000;
+      color: $dark-color;
     }
   }
 }
@@ -26,7 +30,7 @@ header {
 .nav {
   @include mainWidth;
   height: 55px;
-  background-color: #FFFFFF;
+  background-color: $bg-color;
 
     .nav-list {
       padding: 18px 0 16px 16px;
@@ -37,9 +41,9 @@ header {
 
     .nav-link {
       line-height: 19px;
-      color: #8D8D8D;
+      color: $S-Grey-color;
 
-      .nav-link:hover {
+      &:hover {
           color: $hover-color;
         }
       }
@@ -62,9 +66,9 @@ header {
     .nav-breadcrumbs-link {
       font-size: 12px;
       line-height: 14px;
-      color: #4F4F4F;
+      color: $M-Grey-color;
 
-        .nav-breadcrumbs-link:hover {
+        &:hover {
           color: $hover-color;
         }
     }
